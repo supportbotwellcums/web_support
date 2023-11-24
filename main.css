@@ -1,0 +1,127 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Цвет фона страницы */
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    width: 375px; /* Ширина блока main */
+    height: 812px; /* Высота блока main */
+    border: 1px solid #ccc; /* Для наглядности границы блока */
+    background: #000;
+}
+
+main .projects{
+    width: 374px; /* Ширина блока main */
+    height: 760px; /* Высота блока main */
+    border: 1px solid #ccc; /* Для наглядности границы блока */
+    background: #be0c0c;  
+}
+
+main .projects .three_box{
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    /* текст идет одной строкой */
+    white-space: nowrap;
+    width: auto;
+    /* overflow: hidden; */
+    height: auto;
+    /* расстояние между объектами */
+    gap: 30px;
+    margin-bottom: -11.5px; /* Устанавливаем отступ между элементами в высоту */
+
+    background: #000;
+}
+
+main .projects .three_box .frame{
+    margin-left: -40px;
+    display: flex;
+    width: 110px;
+    height: 184px;
+    /* padding: 154px 1px 0px 1px; */
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+    flex-shrink: 0;
+
+    
+}
+
+main .projects .three_box .frame .frame_insaid1{
+    padding: 0px 15px 0px 15px;
+    
+    margin-top: 5px;
+
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.83);
+}
+main .projects .three_box .frame .frame_insaid1 p{
+    /* width: 105px; */
+    /* height: 23px; */
+
+
+
+    color: #00FFF8;
+    font-family: Ubuntu Mono;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main .projects .three_box .frame .frame_insaid2{
+    padding: 0px 11px 0px 11px;
+    
+    margin-top: 100px;
+
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.83);
+}
+main .projects .three_box .frame .frame_insaid2 p{
+    /* width: 105px; */
+    /* height: 23px; */
+
+    
+
+    color: #00FFF8;
+
+    font-family: Ubuntu Mono;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+h1{
+    margin-left: 80px;
+
+    width: 203px;
+    height: 19px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: Ubuntu Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.frame.frame1{
+    background: url(1.png);
+}
+.frame.frame2{
+    background: url(1.png);
+}
+.frame.frame3{
+    background: url(1.png);
+}
