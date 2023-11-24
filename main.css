@@ -1,4 +1,14 @@
 /* styles.css */
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:active {
+    text-decoration: none; /* Убираем подчеркивание после активации */
+    /* Другие стили */
+}
+
+
 body {
     margin: 0;
     display: flex;
@@ -129,7 +139,7 @@ h1{
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame3{
-    background: url(lol.png), lightgray 50% / cover no-repeat;
+    background: url(1.png), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
