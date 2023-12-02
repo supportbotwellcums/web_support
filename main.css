@@ -1,3 +1,4 @@
+
 /* styles.css */
 a {
     text-decoration: none; /* Убираем подчеркивание */
@@ -28,6 +29,7 @@ main {
 }
 
 main .projects{
+    margin-top: 50px;
     width: 374px; /* Ширина блока main */
     height: 760px; /* Высота блока main */
     /* border: 1px solid #ccc;  */
@@ -129,62 +131,63 @@ h1{
 }
 
 .frame.frame1{
-    background: url(1.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__22_14_44.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame2{
-    background: url(2.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__22_12_10.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame3{
-    background: url(3.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame4{
-    background: url(4.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame5{
-    background: url(5.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame6{
-    background: url(6.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame7{
-    background: url(7.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame8{
-    background: url(8.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame9{
-    background: url(9.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame10{
-    background: url(10.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame11{
-    background: url(11.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
 .frame.frame12{
-    background: url(12.jpg), lightgray 50% / cover no-repeat;
+    background: url(6297442145_2023_12_02__21_02_04.jpg), lightgray 50% / cover no-repeat;
     background-size: cover; /* Растягивает или сжимает изображение так, чтобы оно полностью покрывало фон div */
     background-position: center; /* Выравнивание изображения по центру div */
 }
+
