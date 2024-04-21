@@ -1,0 +1,657 @@
+.modal {
+    overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+  
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 1600px;
+    overflow-x: hidden;  /*Скрыть горизонтальную прокрутку */
+    /* height: 1800px; */
+}
+
+.modal-content {
+    /* Добавьте максимальную высоту и стиль прокрутки */
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.modal-content .close_button{
+    position: absolute;
+
+    left: 1575px;
+    top: -2px;
+
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer; /* Добавьте стиль курсора для кнопки */
+
+    background: url(../Img/svg/close_button.svg);
+}
+
+/* Стили для фреймов */
+.modal-content .block {
+    width: 800px; /* Ширина блока будет 400px, чтобы в два ряда поместились */
+    height: 550px;
+    /* border: 1px solid #000; */
+}
+ 
+.block-blue {
+    background: url(../Img/png/Подольск1_800х550.png);
+}
+  
+/* .block-green {
+    background-color: #33CC33;
+} */
+  
+.block-red {
+    background: url(../Img/png/Подольск1_800х550_план1.png);
+}
+  
+.block-yellow {
+    background: url(../Img/png/Подольск1_800х550_план2.png);
+}
+  
+/* Стили для контейнера Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr); /* Два столбца */
+    gap: 0px; /* Расстояние между блоками */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+.modal-content .block .container{
+    width: 380px; /* Ширина блока будет 400px, чтобы в два ряда поместились */
+    height: 55px;
+    /* border: 1px solid #000;  */
+    background: #fff; 
+
+}
+
+.modal-content .block .container p.text{
+    display: flex;
+    width: 164px;
+    height: 13px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-left: 80px;
+    margin-top: -50px;
+
+    color: #7D7D7D;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+.modal-content .block .container p{
+    display: flex;
+    width: 231px;
+    height: 13px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-left: 80px;
+    margin-top: 10px;
+
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-content .block .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr); /* Два столбца */
+    row-gap: 30px; /* Расстояние между блоками по вертикали */
+    column-gap: 5px; /* Расстояние между блоками по вертикали */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+
+    margin-top: 15px;
+}
+
+.modal-content .block .price{
+    width: 775px; /* Ширина блока будет 400px, чтобы в два ряда поместились */
+    height: 155px;
+    /* border: 1px solid #000;  */
+    background: #fff;
+
+    margin-left: 20px;  
+    margin-top: 20px
+}
+
+.modal-content .block .price p{
+    color: #000;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;   
+    
+}
+
+.modal-content .block .price p.pr{
+    display: flex;
+    width: 264px;
+    height: 41px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-top: 15px;
+
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.modal-content .block .price a{
+    display: flex;
+    width: 276px;
+    height: 19px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-top: 20px;
+
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    /* обратная анимация */
+    transition-property: all;
+    transition: .7s   
+}
+
+.modal-content .block .price a:hover{
+    display: flex;
+    width: 276px;
+    height: 19px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-top: 20px;
+
+    color: #FFA800;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.modal-content .block .smeta{
+    display: inline-flex;
+    position: relative;
+    height: 81px;
+    padding: 14px 18px 15px 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+
+    top: -100px;
+    left: 460px;
+    
+    border-radius: 40px;
+    border: 1px solid #0BBB62; 
+    background: #0BBB62;
+    
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+}
+
+.modal-content .block .smeta p{
+    display: flex;
+    width: 171px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: -5px;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+}
+
+
+.modal-content .block .smeta img{
+    width: 42px;
+    height: 42px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+}
+
+
+.modal-content .block .smeta:hover{
+    display: inline-flex;
+    height: 81px;
+    padding: 14px 18px 15px 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+    
+    border-radius: 40px;
+    border: 1px solid #0BBB62; 
+    background: transparent; 
+}
+
+.modal-content .block .smeta:hover p{
+    display: flex;
+    width: 171px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: -5px;
+
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .block .smeta:hover img{
+    width: 42px;
+    height: 42px;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+    background: #0BBB62;
+    border-radius: 5px;
+
+}
+
+/* Стили для прямой линии */
+.modal-content .block .line {
+    position: absolute;
+    width: 800px; /* Ширина линии */
+    height: 1px; /* Высота линии (толщина) */
+    background: rgba(133, 133, 133, 0.66);
+}
+
+.modal-content .block .st{
+    top: 100px;
+    margin-left: 10px;
+}
+.modal-content .block .nd{
+    top: 190px;
+    margin-left: 10px;
+}
+.modal-content .block .rd{
+    top: 280px;
+    margin-left: 10px;
+}
+.modal-content .block .th{
+    top: 360px;
+    margin-left: 10px;
+}
+
+.modal-content .green{
+    position: absolute;
+
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal; 
+}
+
+.modal-content .yellow{
+    position: absolute;
+    color: #FFA800;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-top: 244px;
+    left: 1200px;
+}
+
+.modal-content pre.description{
+    display: flex;
+    width: 1227px;
+    height: 328px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    margin-left: 190px;
+      
+    color: #000;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .pr1{
+    margin-top: 80px;
+    left: 1170px;
+}
+
+.modal-content .pr2{
+    margin-top: 113px;
+    left: 1170px;
+}
+
+.modal-content .pr3{
+    margin-top: 146px;
+    left: 1170px;
+}
+
+.modal-content .pr4{
+    margin-top: 179px;
+    left: 1170px;
+}
+
+.modal-content p.answer_text{
+    position: relative;
+    color: #7D7D7D;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    left: 700px;
+}
+
+
+.modal-content .all{
+    font-family: Lato;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .clients{
+    position: absolute;
+    color: #000;
+    left: 570px;
+}
+
+.modal-content .says{
+    position: relative;
+    color: #0BBB62;
+    left: 740px;
+    /* Добавьте отступ снизу между элементами "answer" в классе "answers" */
+    margin-bottom: 30px;
+}
+
+.modal-content .answer{
+    position: relative;
+    width: 1278px;
+    height: 193px;
+    flex-shrink: 0;
+
+    left: 170px;
+
+    border-radius: 5px;
+    background: #F5F3F3;
+
+    /* Добавьте отступ снизу между элементами "answer" в классе "answers" */
+    margin-bottom: 30px; 
+}
+
+.modal-content .answer .img_house{
+    position: relative;
+    width: 187px;
+    height: 162px;
+    flex-shrink: 0;
+
+    top: 20px;
+
+    background: url(../Img/svg/answer1.svg), lightgray 50% / cover no-repeat;
+}
+
+.modal-content .answer .info p.name{
+    position: relative;
+    display: flex;
+    width: 238px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    left: 200px;
+    top: -150px;
+}
+
+.modal-content .answer .geo{
+    position: relative;
+    display: inline-flex;
+    padding-right: 0px;
+    align-items: flex-start;
+    gap: 7px;
+
+    left: 197px;
+    top: -140px;
+
+    /* background: #7D7D7D; */
+}
+
+.modal-content .answer .geo p{
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .answer span.text{
+    position: relative;
+    display: flex;
+    width: 1043px;
+    height: 87px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #656565;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    left: 200px;
+    top: -130px;
+
+
+}
+
+.modal-content .answer .reit{
+    position: relative;
+    top: -280px;
+    left: 1200px;
+}
+
+.modal-content .finish-block{
+    position: relative;
+    display: inline-flex;
+    padding: 30px 231px 30px 192px;
+    align-items: center;
+    gap: 158px;
+
+    background: #FFA800;
+
+    left: -20px;
+    top: 20px;
+
+    width: 1640px;
+    height: 160px;
+}
+
+.modal-content .finish-block h1{
+    display: flex;
+    width: 679px;
+    height: 76px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .finish-block a{
+    width: 340px;
+    height: 98px;
+    
+    border-radius: 40px;
+    background: #0BBB62;
+    border: 2px solid #0BBB62; 
+
+    /* убрать подчеркивание   */
+    text-decoration: none;
+
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+}
+
+.modal-content .finish-block p{
+    position: relative;
+    display: flex;
+    width: 171px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    top: 20px;
+    left: 30px;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+}
+
+.modal-content .finish-block img{
+    position: relative;
+    width: 69px;
+    height: 53px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+
+    left: 250px;
+    top: -25px;
+
+    /* обратная анимация */
+    transition-property: all;
+    transition: .5s
+
+}
+
+
+.modal-content .finish-block a:hover{
+    width: 340px;
+    height: 98px;
+    
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid #0BBB62; 
+
+    /* убрать подчеркивание   */
+    text-decoration: none;
+}
+
+
+.modal-content .finish-block a:hover p{
+    position: relative;
+    display: flex;
+    width: 171px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    top: 20px;
+    left: 30px;
+
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.modal-content .finish-block a:hover img{
+    position: relative;
+    width: 69px;
+    height: 53px;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+
+    background: #0BBB62;
+    border-radius: 5px;
+
+    left: 250px;
+    top: -25px;   
+}

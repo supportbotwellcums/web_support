@@ -1,0 +1,202 @@
+main .questions{
+    width: 1802px;
+    height: 500px;
+    flex-shrink: 0;
+    background: url(../Img/svg/backgound.svg)
+}
+
+main .questions div.form{
+    width: 538px;
+    height: 442px;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.22);
+
+    position: relative;
+    top: 39px;
+    left: 54px;
+}
+
+main .questions div.form div.name{
+    display: inline-flex;
+    width: 468px;
+    height: 94px;
+    align-items: center;
+    flex-shrink: 0;
+
+    background: #FFF;
+
+    position: relative;
+    left: 31px;
+    top: 38px;
+}
+
+main .questions div.form div.number{
+    display: inline-flex;
+    width: 468px;
+    height: 94px;
+    align-items: center;
+    flex-shrink: 0;
+
+    background: #FFF;
+
+    position: relative;
+    left: 31px;
+    top: 78px;
+}
+
+main .questions div.form div.name .name{
+    display: flex;
+    width: 209px;
+    height: 43px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #4F4F4F;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: static;
+    margin-left: 31px;
+    
+}
+
+main .questions div.form div.number .name{
+    display: flex;
+    width: 209px;
+    height: 43px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #4F4F4F;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: static;
+    margin-left: 31px;
+    
+}
+
+main .questions div.form div.button{
+    transition-property: all;
+    transition: .5s;
+    display: inline-flex;
+    align-items: center;
+
+    width: 468px;
+    height: 94px;
+
+    border-radius: 40px;
+    background: #0BBB62;
+
+    position: relative;
+    left: 31px;
+    top: 128px;
+}
+
+main .questions div.form div.button img{
+    transition-property: all;
+    transition: .5s;
+    position: relative;
+    left: -20px;
+}
+
+main .questions div.form div.button p{
+    transition-property: all;
+    transition: .5s;
+    display: flex;
+    width: 377px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    position: static;
+    margin-left: 35px;
+}
+
+main .questions div.form div.button:hover{
+    transition: all 500ms ease-in-out;
+    display: inline-flex;
+    align-items: center;
+
+    width: 468px;
+    height: 94px;
+
+    border-radius: 40px;
+    background: #FFF;
+    border: 1px solid #0BBB62;
+
+    position: relative;
+    left: 31px;
+    top: 128px;
+}
+
+main .questions div.form div.button:hover img{
+    transition: all 500ms ease-in-out;
+    position: relative;
+    left: -20px;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    background: #0BBB62;
+}
+
+main .questions div.form div.button:hover p{
+    transition: all 500ms ease-in-out;
+    display: flex;
+    width: 377px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #0BBB62;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    position: static;
+    left: 35px;
+}
+
+main .questions p.main{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    position: relative;
+    top: -380px;
+    left: 700px;
+}
+
+main .questions p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 1030px;
+    position: relative;
+    top: -160px;
+    left: 700px;
+    
+}
+

@@ -1,0 +1,125 @@
+main .advantages{
+    width: 1802px;
+    height: 355px;
+    flex-shrink: 0;    
+}
+
+main .advantages span.st {
+    color: #000;
+    font-family: Lato;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: relative;
+    top: 50px;
+    left: 500px;
+}
+
+main .advantages .info_frame .infographika {
+    justify-content: space-around;
+    display: flex;
+    /* текст идет одной строкой */
+    white-space: nowrap;
+    width: auto;
+    /* overflow: hidden; */
+    height: auto;
+    /* расстояние между объектами */
+    position: relative;
+    top: 79px;
+    left: -40px;
+}
+
+main .advantages .info_frame .infographika img{
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+}
+
+
+main .advantages .info_frame .text_info{
+    position: relative;
+    top: 90px;
+}
+
+
+main .advantages .info_frame .text_info ul{
+    justify-content: space-around;
+    display: flex;
+    /* текст идет одной строкой */
+    /* white-space: nowrap; */
+    width: auto;
+    /* overflow: hidden; */
+    height: auto;
+    /* расстояние между объектами */
+    position: relative;
+    left: -40px;
+    gap: 100px;
+    
+}
+
+main .advantages .info_frame .text_info p{
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+main .advantages .info_frame .text_info p.ind{
+    position: relative;
+    width:140px;
+    height: 44px;
+    word-break: break-all;
+
+    left: 15px;
+}
+
+main .advantages .info_frame .text_info p.opt{
+    position: relative;
+    width:80px;
+    height: 44px;
+    word-break: break-all;
+
+    left: 0px;
+}
+
+main .advantages .info_frame .text_info p.kor{
+    position: relative;
+    width:80px;
+    height: 44px;
+    word-break: break-all;
+
+    left: 10px;
+}
+
+main .advantages .info_frame .text_info p.gar{
+    position: relative;
+    width:70px;
+    height: 44px;
+    word-break: break-all;
+
+    left: 20px;
+}
+
+main .advantages .info_frame .text_info p.oci{
+    position: relative;
+    width:150px;
+    height: 44px;
+    word-break: break-all;
+
+    left: 0px;
+}
+
+main .advantages .info_frame .text_info p.pro{
+    position: relative;
+    width:105px;
+    height: 44px;
+    word-break: break-all;
+
+    left: -40px;
+}
